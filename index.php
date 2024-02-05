@@ -202,6 +202,7 @@ if (isset($_POST["delete"])) {
 
 
 
+
 // ปิดการเชื่อมต่อ MySQL
 $conn->close();
 
@@ -217,23 +218,43 @@ $conn->close();
 
 <body>
     <form action="" method="post" enctype="multipart/form-data" name="formDepartment">
-        <h3>Department</h3>
+        <h3>Department
+            <a href="csv/department.csv" download="department.csv">
+                ดาวน์โหลดโครง Department
+            </a>
+        </h3>
         <input name="csvDepartment" type="file" id="csvDepartment" accept=".csv">
         <button type="submit" name="subDepartment">submit</button>
         <br>
-        <h3>course</h3>
+        <h3>course
+            <a href="csv/course.csv" download="course.csv">
+                ดาวน์โหลดโครง Course
+            </a>
+        </h3>
         <input name="csvCourse" type="file" id="csvCourse" accept=".csv">
         <button type="submit" name="subCourse">submit</button>
         <br>
-        <h3>category</h3>
+        <h3>category
+            <a href="csv/category.csv" download="category.csv">
+                ดาวน์โหลดโครง category
+            </a>
+        </h3>
         <input name="csvCategory" type="file" id="csvCategory" accept=".csv">
         <button type="submit" name="subCategory">submit</button>
         <br>
-        <h3>Areas</h3>
+        <h3>Areas
+            <a href="csv/subject_areas.csv" download="subject_areas.csv">
+                ดาวน์โหลดโครง Areas
+            </a>
+        </h3>
         <input name="csvAreas" type="file" id="csvAreas" accept=".csv">
         <button type="submit" name="subAreas">submit</button>
         <br>
-        <h3>Subject</h3>
+        <h3>Subject
+            <a href="csv/subject.csv" download="subject.csv">
+                ดาวน์โหลดโครง subject
+            </a>
+        </h3>
         <input name="csvSubject" type="file" id="csvSubject" accept=".csv">
         <button type="submit" name="subSubject">submit</button>
         <br><br>
