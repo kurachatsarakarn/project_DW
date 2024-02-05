@@ -192,6 +192,18 @@ $conn->close();
         <br><br><button name = course >Addcourse</button>
 
     </form>
+    <form action = "category.php">
+        <br><br><button name = course >Addcategory</button>
+
+    </form>
+    <form action = "subject_areas.php">
+        <br><br><button name = course >Addsubject_areas</button>
+
+    </form>
+    <form action = "subject.php">
+        <br><br><button name = course >Addsubject</button>
+
+    </form>
 </body>
 
 </html>
